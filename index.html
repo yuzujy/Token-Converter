@@ -1,0 +1,52 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fancy Form</title>
+
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <img src=".\images\logo.png" class="logo">
+            <ul>
+                <li><a href="#">Swap</a></li>
+                <li><a href="#">Tokens</a></li>
+            </ul>
+        </nav>
+        <div class="wrapper">
+                <header>SWAP</header>
+                <form action="#">
+                    <div class="amount">
+                        <p>Enter Amount</p>
+                        <input type="text" value="1">
+                    </div>
+                    <div class="drop-list">
+                        <div class="from">
+                            <p>From</p>
+                            <div class="select-box">
+                                <img src="./images/tokens/USD.svg" alt="token">
+                                <select> <!-- Options tag are inserted from JavaScript --> </select>
+                            </div>
+                        </div>
+                        <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                        <div class="to">
+                            <p>To</p>
+                            <div class="select-box">
+                                <img src="./images/tokens/ETH.svg" alt="token">
+                                <select> <!-- Options tag are inserted from JavaScript --> </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exchange-rate">Getting rate...</div>
+                    <button>Get Rate</button>
+                </form>
+            </div>
+        </div>
+        <script type="module" src="script.js"></script>
+    </div>
+</body>
+
+</html>
